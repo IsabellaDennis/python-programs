@@ -14,7 +14,7 @@ else:
 
 
 
-# Enter elements of first list: 1 2 3 4
-# Enter elements of second list: 1 2 3 4
-# Both lists are equal
+# Enter first list of items separated by space: apple banana
+# Enter second list of items separated by space: banana apple
+# The lists are different.
 

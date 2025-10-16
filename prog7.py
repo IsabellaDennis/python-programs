@@ -2,14 +2,15 @@
 
 
 
-list1 = list(map(int, input("Enter elements of first list: ").split()))
-list2 = list(map(int, input("Enter elements of second list: ").split()))
 
+list1 = input("Enter first list of items separated by space: ").split()
+list2 = input("Enter second list of items separated by space: ").split()
 
 if list1 == list2:
-    print("Both lists are equal")
+    print("The lists are the same.")
 else:
-    print("Lists are not equal")
+    print("The lists are different.")
+
 
 
 

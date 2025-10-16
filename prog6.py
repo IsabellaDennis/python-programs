@@ -11,5 +11,9 @@ def unique_words_list(words):
 words = input("Enter words separated by space: ").split()
 print("Unique words:", unique_words_list(words))
 
-# Enter numbers: 1 2 2 3 4 4 5
-# [1, 2, 3, 4, 5]
+
+
+
+
+# Enter words separated by space: apple banana apple mango banana
+# Unique words: ['apple', 'banana', 'mango']

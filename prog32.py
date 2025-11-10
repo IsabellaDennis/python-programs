@@ -1,0 +1,19 @@
+# Python program to copy one file to another
+
+source = input("Enter source file name: ")
+dest = input("Enter destination file name: ")
+
+f1 = open(source, 'r')
+data = f1.read()
+f1.close()
+
+f2 = open(dest, 'w')
+f2.write(data)
+f2.close()
+print("File copied successfully!")
+
+# Example Output:
+# Enter source file name: input.txt
+# Enter destination file name: output.txt
+# File copied successfully!
+

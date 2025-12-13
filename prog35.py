@@ -1,17 +1,23 @@
-# Find the longest word in the file
+# Find the lengthiest line in the file
 
 filename = input("Enter file name: ")
+
 f = open(filename, 'r')
-words = f.read().split()
+lines = f.readlines()
 f.close()
 
-longest = ""
-for word in words:
-    if len(word) > len(longest):
-        longest = word
+longest_line = ""
+for line in lines:
+    if len(line) > len(longest_line):
+        longest_line = line
 
-print("Longest word:", longest)
+print("The lengthiest line is:")
+print(longest_line)
+print("Length of the line:", len(longest_line))
 
-# Example Output:
+
 # Enter file name: sample.txt
-# Longest word: programming
+# The lengthiest line is:
+# Python is amazing
+# Length of the line: 19
+

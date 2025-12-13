@@ -1,18 +1,22 @@
-# Remove comments from a file (lines starting with #)
+# Find the longest word in the file
 
 filename = input("Enter file name: ")
+
 f = open(filename, 'r')
-lines = f.readlines()
+words = f.read().split()
 f.close()
 
-f = open(filename, 'w')
-for line in lines:
-    if not line.strip().startswith("#"):
-        f.write(line)
-f.close()
-print("Comments removed successfully!")
+longest = ""
+for word in words:
+    if len(word) > len(longest):
+        longest = word
 
-# Example Output:
+print("Longest word:", longest)
+print("Length:", len(longest))
+
+
 # Enter file name: sample.txt
-# Comments removed successfully!
+# Longest word: programming
+# Length: 11
+
 
